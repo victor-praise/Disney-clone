@@ -196,7 +196,10 @@ const SignOut = styled.div`
     return (
       <Nav>
         <Logo>
-        <img src="/images/logo.svg" alt="Disney+" />
+          <a href="/home">
+          <img src="/images/logo.svg" alt="Disney+" />
+          </a>
+        
       </Logo>
       {!userName ?  <LoginButton onClick={handleAuth}>Login</LoginButton> : 
       (<>
