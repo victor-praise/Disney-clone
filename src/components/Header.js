@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
-import { selectUserEmail, selectUserName, selectUserPhoto, setSignOutState, setUserLoginDetails } from '../feautures/userSlice';
+import { selectUserName, selectUserPhoto, setSignOutState, setUserLoginDetails } from '../features/userSlice';
 import { auth, provider } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 

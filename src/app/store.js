@@ -1,14 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import userReducer from "../feautures/userSlice"
-
-
+import userReducer from "../features/userSlice";
+import movieReducer from "../features/movie/movieSlice";
 
 // curryGetDefaultMiddleware
 
 export default configureStore({
     reducer:{
-        user: userReducer
+        user: userReducer,
+        movie: movieReducer,
     },
     middleware:(getDefaultMiddleware) =>
     getDefaultMiddleware({
